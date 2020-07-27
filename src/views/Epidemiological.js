@@ -4,7 +4,6 @@ import EpidemMap from '../components/EpidemMap';
 import RegularPlot from '../components/GraphExample';
 import SummaryTable from '../components/Summary';
 import Slider from '@material-ui/core/Slider';
-import Typography from '@material-ui/core/Typography';
 import '../App.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import BARNS from '../data/barns.json';
