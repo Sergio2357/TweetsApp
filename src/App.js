@@ -1,24 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import 'font-awesome/css/font-awesome.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import twiiter from './images/twiiter.png';
+import twente from './images/twente.jpeg'
+
+import { Container, Row, Col } from 'react-bootstrap';
+
+import { Epidemia } from './views/Epidemiological';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <header className="App-header">
+            <Container>
+                <Row>
+                    <Col xs={7}>
+                        <div>
+                            <h1 style={{marginTop: "20px"}}>
+                            Covid-19 vaccine echos in social media
+                            </h1>
+                            <div className="credits"><a>data powered by <img style={{width:"1.5em"}}alt="twiiterimg" src={twiiter}/></a></div>
+                        </div>
+                    </Col>
+                    <Col>
+                        <div>
+                            <img alt='twente' src={twente}></img>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+        </header>
+        <Epidemia />
     </div>
   );
 }

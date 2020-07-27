@@ -14,14 +14,15 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #ffffff;
+  min-height: 8vh;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
@@ -34,5 +35,159 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+img {
+  width: 10em;
+  float: right;
+  margin-right: 0.2em;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+.credits {
+  margin: auto;
+  width: 80%;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.credits img {
+  width: 6em;
+  float: none;
+}
+
+.container {
+  padding-right: 2px;
+  padding-left: 3px;
+  margin-left: 0em;
+}
+
+.button4 {
+  background-color: #ffffff;
+  border: black;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  border-radius: 12px;
+}
+
+/* Epidemiologic Map */
+
+.epidemia_view {
+  margin-left: 0;
+}
+
+.container-epmap {
+  margin-top: 20px;
+  padding-left: 2px;
+  margin-left: 0;
+  max-width: 1200px;
+}
+
+ /* Dropdown Components */
+
+.dropdown-titles {
+  color: gray;
+  padding: 10px;
+  font-family: Arial;
+  font-size: large;
+}
+
+.dropdown-boxes {
+  width: 100%;
+}
+
+/* Graph Components */
+
+.graph-titles {
+  color: gray;
+  padding: 2px;
+  font-family: Arial;
+  font-size: x-large;
+  margin-top: 10px;
+}
+
+.graphBounce {
+  animation-name: gbounce;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+
+@keyframes gbounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  60% {
+    opacity: 0.5;
+    transform: translateY(10px);
+  }
+
+  80% {
+    opacity: 0.7;
+    transform: translateY(-5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Marker Components */
+
+.marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  user-select: none;
+  transform: translate(-50%, -50%);
+}
+
+.pin {
+  opacity: 0.55;
+}
+.pin:hover {
+  opacity: 1;
+  size: 3em;
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-fill-mode: both;
+  animation-duration: 2s;
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
